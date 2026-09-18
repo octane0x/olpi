@@ -1,12 +1,6 @@
 #include <stdio.h>
 #include "banner.h"
-
-#define C_RED     "\033[1;31m"
-#define C_GREEN   "\033[1;32m"
-#define C_CYAN    "\033[1;36m"
-#define C_WHITE   "\033[1;37m"
-#define C_GRAY    "\033[0;90m"
-#define C_RESET   "\033[0m"
+#include "colors.h"
 
 void print_banner(void)
 {
@@ -18,9 +12,7 @@ void print_banner(void)
 "  \\____/|_____|_|  |___|\n"
     C_RESET);
 
-    printf(C_CYAN "        Octane's Linux Process Injector\n" C_RESET);
+    printf(C_CYAN "        Octane's Linux Process Injector v1.1\n" C_RESET);
     printf(C_GRAY "        ------------------------------\n" C_RESET);
-    printf(C_WHITE "        made by " C_RED "octane0x\n\n" C_RESET);
-} 
-//TODO: Add style to olpi.c
-//TODO: Make this banner less ass
+    printf(C_WHITE "        made by " C_GREEN "octane0x\n\n" C_RESET);
+} //TODO: Make this banner less ass

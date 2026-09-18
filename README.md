@@ -8,13 +8,14 @@ A simple Linux Process Injector written in C as a learning project to understand
 >
 > Process injection can be used for both legitimate security research and malicious activities (blackhat), which i don't endorse in any way.
 
-
 ## Build
+
+This assumes you have `gcc` and `make` installed. 
 
 In your terminal:
 
 ```bash
-make olpi
+gcc src/olpi.c src/banner.c -o olpi
 ```
 
 ## Usage
@@ -22,6 +23,8 @@ make olpi
 ```bash
 ./olpi
 ```
+
+**Note:** as of now, attaching to a process you don't own will fail with a permission error unless you run as root.
 
 ## Disclaimer
 
